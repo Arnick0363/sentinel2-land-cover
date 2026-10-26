@@ -1,0 +1,41 @@
+seed: 42
+mode: demo
+
+aoi:
+  name: 珠海横琴
+  # 横琴岛核心的外包矩形，不是行政边界。
+  west: 113.490
+  south: 22.110
+  east: 113.535
+  north: 22.145
+  crs: EPSG:32649
+  resolution_m: 10
+
+dates:
+  t1: "2016-10-18"
+  t2: "2024-10-12"
+  cloud_cover_max: 10
+
+samples:
+  per_class_train: 80
+  per_class_val: 40
+  block_size: 40
+  val_block_fraction: 0.35
+  erode_pixels: 2
+
+model:
+  n_estimators: 100
+  max_depth: 18
+  min_samples_leaf: 2
+  max_features: sqrt
+  class_weight: balanced_subsample
+
+paths:
+  demo_root: data/demo
+  external_t1: data/raw/t1
+  external_t2: data/raw/t2
+  samples: outputs/samples
+  outputs: outputs
+  aoi: data/aoi/hengqin.geojson
+
+data_note: "默认结果来自教学示例景（光谱按 Sentinel-2 L2A 反射率量级合成，范围落在横琴外包矩形上），不是 Copernicus 原始影像的实测扩张。"

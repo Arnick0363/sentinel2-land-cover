@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+credentials.json
+*.pem
+*.key
+*.p12
+data/demo/
+data/raw/*
+!data/raw/.gitkeep
+outputs/models/
+*.joblib
+# Large rasters stay local. Keep the tiny classified maps named in the README.
+*.tif
+*.tiff
+*.img
+*.vrt
+!outputs/maps/class_t1.tif
+!outputs/maps/class_t2.tif
+!outputs/maps/change.tif
+.DS_Store
+Thumbs.db

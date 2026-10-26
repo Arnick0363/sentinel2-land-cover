@@ -1,0 +1,13 @@
+name: sentinel2-land-cover
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - rasterio
+  - scikit-learn
+  - matplotlib
+  - pyyaml
+  - pyproj
+  - pytest
+  - pip

@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "name": "hengqin_bbox",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "珠海横琴",
+        "note": "教学用外包矩形，不是横琴行政区界"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [113.49, 22.11],
+            [113.535, 22.11],
+            [113.535, 22.145],
+            [113.49, 22.145],
+            [113.49, 22.11]
+          ]
+        ]
+      }
+    }
+  ]
+}
